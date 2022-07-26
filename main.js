@@ -7,9 +7,9 @@ window.onload = function () {
 
 
 const randomUser = () => {
-  fetch("https://randomuser.me/api/?results=5")
+  fetch("https://randomuser.me/api/?results=200")
     .then((res) => res.json())
-    .then((users) => (arrayOfRandomUsers = users.results)); ///.notation!
+    .then((users) => (arrayOfRandomUsers = users.results));
 };
 
 console.log("hello", arrayOfRandomUsers);
